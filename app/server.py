@@ -8,8 +8,8 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-export_file_url = 'https://drive.google.com/uc?export=download&confirm=x_7d&id=1QsTZgL6ecDh5sSxKmpJtErEdOh_LmZPI'
-export_file_name = 'export2.pkl'
+export_file_url = 'https://drive.google.com/uc?export=download&confirm=De51&id=1EizSlicdyeaXjKE10M07qUFuxRn_7TVz'
+export_file_name = 'export.pkl'
 
 classes = ['Abra',
  'Aerodactyl',
