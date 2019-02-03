@@ -1,7 +1,6 @@
-# Starter for deploying [fast.ai](https://www.fast.ai) models on [Render](https://render.com)
+# SVHN digit classifier app
+Using starter app for deploying [fast.ai](https://www.fast.ai) models on [Render](https://render.com)
 
-This repo can be used as a starting point to deploy [fast.ai](https://github.com/fastai/fastai) models on Render.
+The deployed model is trained on resnet34 provided by PyTorch, with an accuracy of 97%.
 
-The sample app described here is up at https://fastai-v3.onrender.com. Test it out with bear images!
-
-The guide for production deployment to Render is at https://course.fast.ai/deployment_render.html.
+The sample app described here is up at https://fastai-v3.onrender.com. The guide for production deployment to Render is at https://course.fast.ai/deployment_render.html.
