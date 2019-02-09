@@ -3,6 +3,8 @@ Using starter app for deploying [fast.ai](https://www.fast.ai) models on [Render
 
 The deployed model is trained on resnet34 provided by PyTorch, with an accuracy of 87% across all Pokemon. 
 
+Web App can be found at https://pokedexer.onrender.com/
+
 ### Future Work
 Make use of PokeAPI to provide detailed information about Pokemon identified, so as to act like an actual Pokedex as seen in the anime. 
 
