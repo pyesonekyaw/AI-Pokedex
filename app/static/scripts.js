@@ -161,7 +161,7 @@ function detailView(pokemon, data) {
 function backButton(detailCard) {
   const back = document.createElement('img');
   back.setAttribute('class', 'backButton');
-  back.src = 'left-arrow.svg';
+  back.src = '../static/left-arrow.svg';
   detailCard.appendChild(back);
   back.addEventListener ("click", function() {
     container.removeChild(detailCard);
