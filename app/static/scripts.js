@@ -990,3 +990,17 @@ function checkempty(){
 
 checkempty()
 
+async function analysefinished(){
+  name = el('result-label').innerHTML;
+  pokemon = name.toLowerCase()
+  var request = new XMLHttpRequest();
+  request.open('GET', 'https://pokeapi.co/api/v2/pokemon/' + pokemon, true);
+  request.onload = function () {
+
+  // Begin accessing JSON data here
+  var data = JSON.parse(this.response);
+  detailView(data.species.name, data)
+}
+const a = await doubleAfter2Seconds(10);
+  request.send();
+  }
