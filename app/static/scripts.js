@@ -837,7 +837,7 @@ function doubleAfter2Seconds(x) {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve(x);
-    }, 100);
+    }, 300);
   });
 }
 
