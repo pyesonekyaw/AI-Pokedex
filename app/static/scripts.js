@@ -999,7 +999,7 @@ async function analysefinished(){
 
   // Begin accessing JSON data here
   var data = JSON.parse(this.response);
-  detailView(data.species.name, data)
+  detailView(pokemon, data)
 }
 const a = await doubleAfter2Seconds(10);
   request.send();
