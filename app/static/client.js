@@ -32,7 +32,10 @@ function analyze() {
     var fileData = new FormData();
     fileData.append('file', uploadFiles[0]);
     xhr.send(fileData);
-    
+
+}
+
+function showinfo(){
     name = el('result-label').innerHTML;
     pokemon = name.toLowerCase()
     var request = new XMLHttpRequest();
@@ -45,12 +48,7 @@ function analyze() {
     }
     
     request.send();
-  
-
-
 }
-
-
 
 
 
