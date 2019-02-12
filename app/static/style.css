@@ -10,6 +10,10 @@ html {
   color: #666;
   background: #F6F6F6;
 }
+
+.no-display {
+    display: none;
+}
 .center {
     margin: auto;
     padding: 10px;
