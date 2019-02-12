@@ -12,7 +12,7 @@ function showPicked(input) {
     reader.readAsDataURL(input.files[0]);
 }
 
-function analyze(callback) {
+function analyze() {
     var uploadFiles = el('file-input').files;
     if (uploadFiles.length != 1) alert('Please select 1 file to analyze!');
 
@@ -32,7 +32,25 @@ function analyze(callback) {
     var fileData = new FormData();
     fileData.append('file', uploadFiles[0]);
     xhr.send(fileData);
-    callback();
+    
+    name = el('result-label').innerHTML;
+    pokemon = name.toLowerCase()
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://pokeapi.co/api/v2/pokemon/' + pokemon, true);
+    request.onload = function () {
+
+    // Begin accessing JSON data here
+    var new_data = JSON.parse(this.response);
+    detailView(pokemon, new_data)
+    }
+    
+    request.send();
+  
+
+
 }
+
+
+
 
 
