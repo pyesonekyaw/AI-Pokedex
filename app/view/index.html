@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-  <title>AI Pokedex</title>
-  <script src='../static/client.js'></script>
-  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
-  <link href="../static/style.css" rel="stylesheet">
-  <link rel='stylesheet' href='../static/style.css'>
-</head>
-
-<body>
-  
-  <div id="root">
-  	<img src="../static/logo.png" alt="AI Pokedex" class="logo">
-<div class='center'>
-        <div class='content'>
-            <div class='no-display'>
-                <input id='file-input'
-                       class='no-display'
-                       type='file'
-                       name='file'
-                       accept='image/*'
-                       onchange='showPicked(this)'>
-            </div>
-            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-            <div class='upload-label'>
-                <label id='upload-label'>No file chosen</label>
-            </div>
-            <div>
-                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-            </div>
-            <div class='analyze'>
-                <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-            </div>
-            <div class='result-label'>
-                <label id='result-label'></label>
-            </div>
-	    <div class='analyze'>
-                <button id='analyze-button' class='analyze-button' type='button' onclick='showinfo()'>Show Info</button>
-            </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AI Pokedex</title>
+    <script src='../static/client.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
+    <link rel='stylesheet' href='../static/style.css'>
+  </head>
+  <body>
+    <img src="../static/logo.png" alt="AI Pokedex" class="logo">
+    <div class='center'>
+      <div class='content'>
+        <div class='no-display'>
+          <input id='file-input'
+          class='no-display'
+          type='file'
+          name='file'
+          accept='image/*'
+          onchange='showPicked(this)'>
         </div>
+        <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+        <div class='upload-label'>
+          <label id='upload-label'>No file chosen</label>
+        </div>
+        <div>
+          <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+        </div>
+        <div class='analyze'>
+          <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        </div>
+        <div class='result-label'>
+          <label id='result-label'></label>
+        </div>
+        <div class='analyze'>
+          <button id='analyze-button' class='analyze-button' type='button' onclick='showinfo()'>Show Info</button>
+        </div>
+      </div>
+    </div>
+    <!--pokedex grid -->
+    <h1>Region Pokedex</h1>
+    <div id="root">
+      <select id="regions" onchange="regionChange(this)">
+        <option value="kanto">Kanto</option>
+        <option value="johto">Johto</option>
+        <option value="hoenn">Hoenn</option>
+        <option value="sinnoh">Sinnoh</option>
+        <option value="unova">Unova</option>
+        <option value="kalos">Kalos</option>
+        <option value="alola">Alola</option>
+      </select>
+      
     </div>
   </div>
+  <footer class="footer">
+    <p>An <a href="https://github.com/py-sk/pokemon-classifier-webapp">open-source site</a> by <a href="http://pyesonekyaw.com/">Pye Sone Kyaw</a>, with help from <a href="https://www.fast.ai/">fast.ai</a> and <a href="https://pokeapi.co/">PokeAPI</a>.</p>
+    <br>
+    <p>All content is © Nintendo, Game Freak, and The Pokémon Company.</p>
+  </footer>
   
   <script src="../static/scripts.js"></script>
 </body>
-
 </html>
