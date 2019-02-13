@@ -1,4 +1,4 @@
-var pokemons = ['Bulbasaur',
+var kanto = ['Bulbasaur',
  'Ivysaur',
  'Venusaur',
  'Charmander',
@@ -26,10 +26,10 @@ var pokemons = ['Bulbasaur',
  'Raichu',
  'Sandshrew',
  'Sandslash',
- 'Nidoran♀',
+ 'Nidoran-f',
  'Nidorina',
  'Nidoqueen',
- 'Nidoran♂',
+ 'Nidoran-m',
  'Nidorino',
  'Nidoking',
  'Clefairy',
@@ -58,9 +58,746 @@ var pokemons = ['Bulbasaur',
  'Growlithe',
  'Arcanine',
  'Poliwag',
- ];
-
-
+ 'Poliwhirl',
+ 'Poliwrath',
+ 'Abra',
+ 'Kadabra',
+ 'Alakazam',
+ 'Machop',
+ 'Machoke',
+ 'Machamp',
+ 'Bellsprout',
+ 'Weepinbell',
+ 'Victreebel',
+ 'Tentacool',
+ 'Tentacruel',
+ 'Geodude',
+ 'Graveler',
+ 'Golem',
+ 'Ponyta',
+ 'Rapidash',
+ 'Slowpoke',
+ 'Slowbro',
+ 'Magnemite',
+ 'Magneton',
+ "Farfetchd",
+ 'Doduo',
+ 'Dodrio',
+ 'Seel',
+ 'Dewgong',
+ 'Grimer',
+ 'Muk',
+ 'Shellder',
+ 'Cloyster',
+ 'Gastly',
+ 'Haunter',
+ 'Gengar',
+ 'Onix',
+ 'Drowzee',
+ 'Hypno',
+ 'Krabby',
+ 'Kingler',
+ 'Voltorb',
+ 'Electrode',
+ 'Exeggcute',
+ 'Exeggutor',
+ 'Cubone',
+ 'Marowak',
+ 'Hitmonlee',
+ 'Hitmonchan',
+ 'Lickitung',
+ 'Koffing',
+ 'Weezing',
+ 'Rhyhorn',
+ 'Rhydon',
+ 'Chansey',
+ 'Tangela',
+ 'Kangaskhan',
+ 'Horsea',
+ 'Seadra',
+ 'Goldeen',
+ 'Seaking',
+ 'Staryu',
+ 'Starmie',
+ 'Mr-Mime',
+ 'Scyther',
+ 'Jynx',
+ 'Electabuzz',
+ 'Magmar',
+ 'Pinsir',
+ 'Tauros',
+ 'Magikarp',
+ 'Gyarados',
+ 'Lapras',
+ 'Ditto',
+ 'Eevee',
+ 'Vaporeon',
+ 'Jolteon',
+ 'Flareon',
+ 'Porygon',
+ 'Omanyte',
+ 'Omastar',
+ 'Kabuto',
+ 'Kabutops',
+ 'Aerodactyl',
+ 'Snorlax',
+ 'Articuno',
+ 'Zapdos',
+ 'Moltres',
+ 'Dratini',
+ 'Dragonair',
+ 'Dragonite',
+ 'Mewtwo',
+ 'Mew',]
+var johto = ['Chikorita',
+ 'Bayleef',
+ 'Meganium',
+ 'Cyndaquil',
+ 'Quilava',
+ 'Typhlosion',
+ 'Totodile',
+ 'Croconaw',
+ 'Feraligatr',
+ 'Sentret',
+ 'Furret',
+ 'Hoothoot',
+ 'Noctowl',
+ 'Ledyba',
+ 'Ledian',
+ 'Spinarak',
+ 'Ariados',
+ 'Crobat',
+ 'Chinchou',
+ 'Lanturn',
+ 'Pichu',
+ 'Cleffa',
+ 'Igglybuff',
+ 'Togepi',
+ 'Togetic',
+ 'Natu',
+ 'Xatu',
+ 'Mareep',
+ 'Flaaffy',
+ 'Ampharos',
+ 'Bellossom',
+ 'Marill',
+ 'Azumarill',
+ 'Sudowoodo',
+ 'Politoed',
+ 'Hoppip',
+ 'Skiploom',
+ 'Jumpluff',
+ 'Aipom',
+ 'Sunkern',
+ 'Sunflora',
+ 'Yanma',
+ 'Wooper',
+ 'Quagsire',
+ 'Espeon',
+ 'Umbreon',
+ 'Murkrow',
+ 'Slowking',
+ 'Misdreavus',
+ 'Unown',
+ 'Wobbuffet',
+ 'Girafarig',
+ 'Pineco',
+ 'Forretress',
+ 'Dunsparce',
+ 'Gligar',
+ 'Steelix',
+ 'Snubbull',
+ 'Granbull',
+ 'Qwilfish',
+ 'Scizor',
+ 'Shuckle',
+ 'Heracross',
+ 'Sneasel',
+ 'Teddiursa',
+ 'Ursaring',
+ 'Slugma',
+ 'Magcargo',
+ 'Swinub',
+ 'Piloswine',
+ 'Corsola',
+ 'Remoraid',
+ 'Octillery',
+ 'Delibird',
+ 'Mantine',
+ 'Skarmory',
+ 'Houndour',
+ 'Houndoom',
+ 'Kingdra',
+ 'Phanpy',
+ 'Donphan',
+ 'Porygon2',
+ 'Stantler',
+ 'Smeargle',
+ 'Tyrogue',
+ 'Hitmontop',
+ 'Smoochum',
+ 'Elekid',
+ 'Magby',
+ 'Miltank',
+ 'Blissey',
+ 'Raikou',
+ 'Entei',
+ 'Suicune',
+ 'Larvitar',
+ 'Pupitar',
+ 'Tyranitar',
+ 'Lugia',
+ 'Ho-Oh',
+ 'Celebi']
+var hoenn = ['Treecko',
+ 'Grovyle',
+ 'Sceptile',
+ 'Torchic',
+ 'Combusken',
+ 'Blaziken',
+ 'Mudkip',
+ 'Marshtomp',
+ 'Swampert',
+ 'Poochyena',
+ 'Mightyena',
+ 'Zigzagoon',
+ 'Linoone',
+ 'Wurmple',
+ 'Silcoon',
+ 'Beautifly',
+ 'Cascoon',
+ 'Dustox',
+ 'Lotad',
+ 'Lombre',
+ 'Ludicolo',
+ 'Seedot',
+ 'Nuzleaf',
+ 'Shiftry',
+ 'Taillow',
+ 'Swellow',
+ 'Wingull',
+ 'Pelipper',
+ 'Ralts',
+ 'Kirlia',
+ 'Gardevoir',
+ 'Surskit',
+ 'Masquerain',
+ 'Shroomish',
+ 'Breloom',
+ 'Slakoth',
+ 'Vigoroth',
+ 'Slaking',
+ 'Nincada',
+ 'Ninjask',
+ 'Shedinja',
+ 'Whismur',
+ 'Loudred',
+ 'Exploud',
+ 'Makuhita',
+ 'Hariyama',
+ 'Azurill',
+ 'Nosepass',
+ 'Skitty',
+ 'Delcatty',
+ 'Sableye',
+ 'Mawile',
+ 'Aron',
+ 'Lairon',
+ 'Aggron',
+ 'Meditite',
+ 'Medicham',
+ 'Electrike',
+ 'Manectric',
+ 'Plusle',
+ 'Minun',
+ 'Volbeat',
+ 'Illumise',
+ 'Roselia',
+ 'Gulpin',
+ 'Swalot',
+ 'Carvanha',
+ 'Sharpedo',
+ 'Wailmer',
+ 'Wailord',
+ 'Numel',
+ 'Camerupt',
+ 'Torkoal',
+ 'Spoink',
+ 'Grumpig',
+ 'Spinda',
+ 'Trapinch',
+ 'Vibrava',
+ 'Flygon',
+ 'Cacnea',
+ 'Cacturne',
+ 'Swablu',
+ 'Altaria',
+ 'Zangoose',
+ 'Seviper',
+ 'Lunatone',
+ 'Solrock',
+ 'Barboach',
+ 'Whiscash',
+ 'Corphish',
+ 'Crawdaunt',
+ 'Baltoy',
+ 'Claydol',
+ 'Lileep',
+ 'Cradily',
+ 'Anorith',
+ 'Armaldo',
+ 'Feebas',
+ 'Milotic',
+ 'Castform',
+ 'Kecleon',
+ 'Shuppet',
+ 'Banette',
+ 'Duskull',
+ 'Dusclops',
+ 'Tropius',
+ 'Chimecho',
+ 'Absol',
+ 'Wynaut',
+ 'Snorunt',
+ 'Glalie',
+ 'Spheal',
+ 'Sealeo',
+ 'Walrein',
+ 'Clamperl',
+ 'Huntail',
+ 'Gorebyss',
+ 'Relicanth',
+ 'Luvdisc',
+ 'Bagon',
+ 'Shelgon',
+ 'Salamence',
+ 'Beldum',
+ 'Metang',
+ 'Metagross',
+ 'Regirock',
+ 'Regice',
+ 'Registeel',
+ 'Latias',
+ 'Latios',
+ 'Kyogre',
+ 'Groudon',
+ 'Rayquaza',
+ 'Jirachi',
+ 'Deoxys-normal',]
+var sinnoh=['Turtwig',
+ 'Grotle',
+ 'Torterra',
+ 'Chimchar',
+ 'Monferno',
+ 'Infernape',
+ 'Piplup',
+ 'Prinplup',
+ 'Empoleon',
+ 'Starly',
+ 'Staravia',
+ 'Staraptor',
+ 'Bidoof',
+ 'Bibarel',
+ 'Kricketot',
+ 'Kricketune',
+ 'Shinx',
+ 'Luxio',
+ 'Luxray',
+ 'Budew',
+ 'Roserade',
+ 'Cranidos',
+ 'Rampardos',
+ 'Shieldon',
+ 'Bastiodon',
+ 'Burmy',
+ 'Wormadam-plant',
+ 'Mothim',
+ 'Combee',
+ 'Vespiquen',
+ 'Pachirisu',
+ 'Buizel',
+ 'Floatzel',
+ 'Cherubi',
+ 'Cherrim',
+ 'Shellos',
+ 'Gastrodon',
+ 'Ambipom',
+ 'Drifloon',
+ 'Drifblim',
+ 'Buneary',
+ 'Lopunny',
+ 'Mismagius',
+ 'Honchkrow',
+ 'Glameow',
+ 'Purugly',
+ 'Chingling',
+ 'Stunky',
+ 'Skuntank',
+ 'Bronzor',
+ 'Bronzong',
+ 'Bonsly',
+ 'Mime-Jr',
+ 'Happiny',
+ 'Chatot',
+ 'Spiritomb',
+ 'Gible',
+ 'Gabite',
+ 'Garchomp',
+ 'Munchlax',
+ 'Riolu',
+ 'Lucario',
+ 'Hippopotas',
+ 'Hippowdon',
+ 'Skorupi',
+ 'Drapion',
+ 'Croagunk',
+ 'Toxicroak',
+ 'Carnivine',
+ 'Finneon',
+ 'Lumineon',
+ 'Mantyke',
+ 'Snover',
+ 'Abomasnow',
+ 'Weavile',
+ 'Magnezone',
+ 'Lickilicky',
+ 'Rhyperior',
+ 'Tangrowth',
+ 'Electivire',
+ 'Magmortar',
+ 'Togekiss',
+ 'Yanmega',
+ 'Leafeon',
+ 'Glaceon',
+ 'Gliscor',
+ 'Mamoswine',
+ 'Porygon-Z',
+ 'Gallade',
+ 'Probopass',
+ 'Dusknoir',
+ 'Froslass',
+ 'Rotom',
+ 'Uxie',
+ 'Mesprit',
+ 'Azelf',
+ 'Dialga',
+ 'Palkia',
+ 'Heatran',
+ 'Regigigas',
+ 'Giratina-altered',
+ 'Cresselia',
+ 'Phione',
+ 'Manaphy',
+ 'Darkrai',
+ 'Shaymin-land',
+ 'Arceus',
+ 'Victini']
+var unova= ['Snivy',
+ 'Servine',
+ 'Serperior',
+ 'Tepig',
+ 'Pignite',
+ 'Emboar',
+ 'Oshawott',
+ 'Dewott',
+ 'Samurott',
+ 'Patrat',
+ 'Watchog',
+ 'Lillipup',
+ 'Herdier',
+ 'Stoutland',
+ 'Purrloin',
+ 'Liepard',
+ 'Pansage',
+ 'Simisage',
+ 'Pansear',
+ 'Simisear',
+ 'Panpour',
+ 'Simipour',
+ 'Munna',
+ 'Musharna',
+ 'Pidove',
+ 'Tranquill',
+ 'Unfezant',
+ 'Blitzle',
+ 'Zebstrika',
+ 'Roggenrola',
+ 'Boldore',
+ 'Gigalith',
+ 'Woobat',
+ 'Swoobat',
+ 'Drilbur',
+ 'Excadrill',
+ 'Audino',
+ 'Timburr',
+ 'Gurdurr',
+ 'Conkeldurr',
+ 'Tympole',
+ 'Palpitoad',
+ 'Seismitoad',
+ 'Throh',
+ 'Sawk',
+ 'Sewaddle',
+ 'Swadloon',
+ 'Leavanny',
+ 'Venipede',
+ 'Whirlipede',
+ 'Scolipede',
+ 'Cottonee',
+ 'Whimsicott',
+ 'Petilil',
+ 'Lilligant',
+ 'Basculin-red-striped',
+ 'Sandile',
+ 'Krokorok',
+ 'Krookodile',
+ 'Darumaka',
+ 'Darmanitan-standard',
+ 'Maractus',
+ 'Dwebble',
+ 'Crustle',
+ 'Scraggy',
+ 'Scrafty',
+ 'Sigilyph',
+ 'Yamask',
+ 'Cofagrigus',
+ 'Tirtouga',
+ 'Carracosta',
+ 'Archen',
+ 'Archeops',
+ 'Trubbish',
+ 'Garbodor',
+ 'Zorua',
+ 'Zoroark',
+ 'Minccino',
+ 'Cinccino',
+ 'Gothita',
+ 'Gothorita',
+ 'Gothitelle',
+ 'Solosis',
+ 'Duosion',
+ 'Reuniclus',
+ 'Ducklett',
+ 'Swanna',
+ 'Vanillite',
+ 'Vanillish',
+ 'Vanilluxe',
+ 'Deerling',
+ 'Sawsbuck',
+ 'Emolga',
+ 'Karrablast',
+ 'Escavalier',
+ 'Foongus',
+ 'Amoonguss',
+ 'Frillish',
+ 'Jellicent',
+ 'Alomomola',
+ 'Joltik',
+ 'Galvantula',
+ 'Ferroseed',
+ 'Ferrothorn',
+ 'Klink',
+ 'Klang',
+ 'Klinklang',
+ 'Tynamo',
+ 'Eelektrik',
+ 'Eelektross',
+ 'Elgyem',
+ 'Beheeyem',
+ 'Litwick',
+ 'Lampent',
+ 'Chandelure',
+ 'Axew',
+ 'Fraxure',
+ 'Haxorus',
+ 'Cubchoo',
+ 'Beartic',
+ 'Cryogonal',
+ 'Shelmet',
+ 'Accelgor',
+ 'Stunfisk',
+ 'Mienfoo',
+ 'Mienshao',
+ 'Druddigon',
+ 'Golett',
+ 'Golurk',
+ 'Pawniard',
+ 'Bisharp',
+ 'Bouffalant',
+ 'Rufflet',
+ 'Braviary',
+ 'Vullaby',
+ 'Mandibuzz',
+ 'Heatmor',
+ 'Durant',
+ 'Deino',
+ 'Zweilous',
+ 'Hydreigon',
+ 'Larvesta',
+ 'Volcarona',
+ 'Cobalion',
+ 'Terrakion',
+ 'Virizion',
+ 'Tornadus-incarnate',
+ 'Thundurus-incarnate',
+ 'Reshiram',
+ 'Zekrom',
+ 'Landorus-incarnate',
+ 'Kyurem',
+ 'Keldeo-ordinary',
+ 'Meloetta-aria',
+ 'Genesect']
+var kalos=['Chespin',
+ 'Quilladin',
+ 'Chesnaught',
+ 'Fennekin',
+ 'Braixen',
+ 'Delphox',
+ 'Froakie',
+ 'Frogadier',
+ 'Greninja',
+ 'Bunnelby',
+ 'Diggersby',
+ 'Fletchling',
+ 'Fletchinder',
+ 'Talonflame',
+ 'Scatterbug',
+ 'Spewpa',
+ 'Vivillon',
+ 'Litleo',
+ 'Pyroar',
+ 'Flabebe',
+ 'Floette',
+ 'Florges',
+ 'Skiddo',
+ 'Gogoat',
+ 'Pancham',
+ 'Pangoro',
+ 'Furfrou',
+ 'Espurr',
+ 'Meowstic-Male',
+ 'Honedge',
+ 'Doublade',
+ 'Aegislash-Shield',
+ 'Spritzee',
+ 'Aromatisse',
+ 'Swirlix',
+ 'Slurpuff',
+ 'Inkay',
+ 'Malamar',
+ 'Binacle',
+ 'Barbaracle',
+ 'Skrelp',
+ 'Dragalge',
+ 'Clauncher',
+ 'Clawitzer',
+ 'Helioptile',
+ 'Heliolisk',
+ 'Tyrunt',
+ 'Tyrantrum',
+ 'Amaura',
+ 'Aurorus',
+ 'Sylveon',
+ 'Hawlucha',
+ 'Dedenne',
+ 'Carbink',
+ 'Goomy',
+ 'Sliggoo',
+ 'Goodra',
+ 'Klefki',
+ 'Phantump',
+ 'Trevenant',
+ 'Pumpkaboo-Average',
+ 'Gourgeist-Average',
+ 'Bergmite',
+ 'Avalugg',
+ 'Noibat',
+ 'Noivern',
+ 'Xerneas',
+ 'Yveltal',
+ 'Zygarde',
+ 'Diancie',
+ 'Hoopa',
+ 'Volcanion']
+var alola=[ 'Rowlet',
+ 'Dartrix',
+ 'Decidueye',
+ 'Litten',
+ 'Torracat',
+ 'Incineroar',
+ 'Popplio',
+ 'Brionne',
+ 'Primarina',
+ 'Pikipek',
+ 'Trumbeak',
+ 'Toucannon',
+ 'Yungoos',
+ 'Gumshoos',
+ 'Grubbin',
+ 'Charjabug',
+ 'Vikavolt',
+ 'Crabrawler',
+ 'Crabominable',
+ 'Oricorio-baile',
+ 'Cutiefly',
+ 'Ribombee',
+ 'Rockruff',
+ 'Lycanroc-midday',
+ 'Wishiwashi-solo',
+ 'Mareanie',
+ 'Toxapex',
+ 'Mudbray',
+ 'Mudsdale',
+ 'Dewpider',
+ 'Araquanid',
+ 'Fomantis',
+ 'Lurantis',
+ 'Morelull',
+ 'Shiinotic',
+ 'Salandit',
+ 'Salazzle',
+ 'Stufful',
+ 'Bewear',
+ 'Bounsweet',
+ 'Steenee',
+ 'Tsareena',
+ 'Comfey',
+ 'Oranguru',
+ 'Passimian',
+ 'Wimpod',
+ 'Golisopod',
+ 'Sandygast',
+ 'Palossand',
+ 'Pyukumuku',
+  'Silvally',
+ 'Minior-Red-Meteor',
+ 'Komala',
+ 'Turtonator',
+ 'Togedemaru',
+ 'Mimikyu-Disguised',
+ 'Bruxish',
+ 'Drampa',
+ 'Dhelmise',
+ 'Jangmo-o',
+ 'Hakamo-o',
+ 'Kommo-o',
+ 'Tapu-Koko',
+ 'Tapu-Lele',
+ 'Tapu-Bulu',
+ 'Tapu-Fini',
+ 'Cosmog',
+ 'Cosmoem',
+ 'Solgaleo',
+ 'Lunala',
+ 'Nihilego',
+ 'Buzzwole',
+ 'Pheromosa',
+ 'Xurkitree',
+ 'Celesteela',
+ 'Kartana',
+ 'Guzzlord',
+ 'Necrozma',
+ 'Magearna']
 var colors = {fire: '#F08030',
 normal: "#A8A878", 
 water: "#6890F0" ,
@@ -80,74 +817,66 @@ fairy: '#EE99AC' ,
 ice: '#98D8D8' ,
 grass: '#78C850' }
 
+//to accomodate pokeapi capitalisation
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
-const app = document.getElementById('root');
-
-
-const container = document.createElement('div');
-container.setAttribute('class', 'container');
-
-
-app.appendChild(container);
-
-
+//for async function to run in order
 function doubleAfter2Seconds(x) {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve(x);
-    }, 100);
+    }, 50);
   });
 }
+//create initial container to contain the pokemon generated
+const app = document.getElementById('root');
+const container = document.createElement('div');
+container.setAttribute('class', 'container');
+container.setAttribute('id', 'displaygrid');
+app.appendChild(container);
+
+
+
 
 async function  generateCard(array){
-  for (i = 0; i<pokemons.length; i++){
-    pokemon = pokemons[i].toLowerCase()
+  for (i = 0; i<array.length; i++){
+    pokemon = array[i].toLowerCase()
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://pokeapi.co/api/v2/pokemon/' + String(i+1), true);
+    request.open('GET', 'https://pokeapi.co/api/v2/pokemon/' + pokemon, true);
     request.onload = function () {
-
       // Begin accessing JSON data here
       var data = JSON.parse(this.response);
-      
+      //get sprite source
       const sprite = document.createElement('img');
       sprite.setAttribute('class', 'sprite');
       sprite.src = data.sprites.front_default;
-      
+      //get pokemon type(s)
       const card = document.createElement('div');
-      //card.setAttribute('class', 'card ');
       if (data.types[1] !== undefined) {
         card.setAttribute('class', 'card '+ data.types[0].type.name + " " +data.types[1].type.name);
       } else {
         card.setAttribute('class', 'card '+ data.types[0].type.name);
       }
-
+      //get pokemon name
       const h1 = document.createElement('h1');
       h1.textContent = capitalizeFirstLetter(data.species.name);
-
-      
-
+      //when individual pokemon card is chosen by user, display detailed information
       card.addEventListener ("click", function() {
-        detailView(data.species.name, data)
+        detailView(data)
       });
-
+      //add the elements above to container and its children
       container.appendChild(card);
       card.appendChild(h1);
       card.appendChild(sprite);
-      
-
     }
-const a = await doubleAfter2Seconds(10);
+  const a = await doubleAfter2Seconds(10);
   request.send();
   }
-
-
 }
-
-function detailView(pokemon, data) {
+function detailView(data) {
   const detailCard = document.createElement('div');
+  //if dual type pokemon, add two types to class
   if (data.types[1] !== undefined) {
         detailCard.setAttribute('class', 'detailCard '+ data.types[0].type.name + " " +data.types[1].type.name);
       } else {
@@ -157,111 +886,126 @@ function detailView(pokemon, data) {
   backButton(detailCard);
   infoCard(data,detailCard);
 }
-
 function backButton(detailCard) {
   const back = document.createElement('img');
   back.setAttribute('class', 'backButton');
-  back.src = 'left-arrow.svg';
+  back.src = '../static/left-arrow.svg';
   detailCard.appendChild(back);
   back.addEventListener ("click", function() {
     container.removeChild(detailCard);
   });
 }
-
-async function infoCard(data,detailCard) {
-  //title
-  const infoCard = document.createElement('div');
-  infoCard.setAttribute('class', 'infocard ' + pokemon)
-  detailCard.appendChild(infoCard)
+function titleInfocard(infoCard,data){
   const h2 = document.createElement('h2');
   h2.textContent = capitalizeFirstLetter(data.species.name);
-
   h2.setAttribute('class', 'title')
   infoCard.appendChild(h2);
-
-  //sprite
+  return h2
+}
+function spriteInfoCard(infoCard,data){
   const cardSprite = document.createElement('img');
   cardSprite.setAttribute('class', 'cardSprite');
   cardSprite.src = data.sprites.front_default;
   infoCard.appendChild(cardSprite);
-
-  //types
+}
+function typeInfoCard(infoCard,data,h2){
   var type_show = 'normal'
   if (data.types[1] !== undefined) {
-        const type0 = document.createElement('h3');
-        type00 = data.types[1].type.name
-        type0.setAttribute('class', 'typeCard ' + data.types[1].type.name);
-        type0.textContent = capitalizeFirstLetter(data.types[1].type.name);
-        type0.style.background = colors[type00];
-        
-        infoCard.appendChild(type0);
-        const type1 = document.createElement('h3');
-        type01 = data.types[0].type.name
-        type1.setAttribute('class', 'typeCard' + data.types[0].type.name);
-        type1.textContent = capitalizeFirstLetter(data.types[0].type.name);
-        type1.style.background = colors[type01];
-        
-        infoCard.appendChild(type1);
-        type_show = type00;
-      } else {
-        const type0 = document.createElement('h3');
-        type00 = data.types[0].type.name
-        type0.setAttribute('class', 'typeCard' + data.types[0].type.name);
-        type0.textContent = capitalizeFirstLetter(data.types[0].type.name);
-        type0.style.background = colors[type00];
-        infoCard.appendChild(type0);
-        type_show = type00;
-      }
-     
+    //1st type
+    const type0 = document.createElement('h3');
+    type00 = data.types[1].type.name
+    type0.setAttribute('class', 'typeCard ' + data.types[1].type.name);
+    type0.textContent = capitalizeFirstLetter(data.types[1].type.name);
+    type0.style.background = colors[type00];
+    infoCard.appendChild(type0);
+    //2nd type
+    const type1 = document.createElement('h3');
+    type01 = data.types[0].type.name
+    type1.setAttribute('class', 'typeCard' + data.types[0].type.name);
+    type1.textContent = capitalizeFirstLetter(data.types[0].type.name);
+    type1.style.background = colors[type01];
+    infoCard.appendChild(type1);
+    type_show = type00;
+  } else {
+    const type0 = document.createElement('h3');
+    type00 = data.types[0].type.name
+    type0.setAttribute('class', 'typeCard' + data.types[0].type.name);
+    type0.textContent = capitalizeFirstLetter(data.types[0].type.name);
+    type0.style.background = colors[type00];
+    infoCard.appendChild(type0);
+    type_show = type00;
+  }
     h2.style.background = colors[type_show]; 
     h2.style.color = 'white';
-
-    //flavor text
-    var request = new XMLHttpRequest();
-    request.open('GET', 'https://pokeapi.co/api/v2/pokemon-species/' + data.species.name, true);
-    request.onload = function () {
+}
+async function flavourInfoCard(data,infoCard){
+  var request = new XMLHttpRequest();
+  request.open('GET', 'https://pokeapi.co/api/v2/pokemon-species/' + data.species.name, true);
+  request.onload = function () {
     var species_data = JSON.parse(this.response);
-    //console.log(species_data)
     const what_pokemon = document.createElement('p')
     what_pokemon.textContent = species_data.genera[2].genus;
     what_pokemon.setAttribute('class', 'whatPokemon');
     infoCard.appendChild(what_pokemon);
     const flavour = document.createElement('p');
+    //because pokeapi's english flavour text location isnt consistent
     for (var i = 0; i<4;i++){
       if (species_data.flavor_text_entries[i].language.name == "en") {
         flavour.textContent = species_data.flavor_text_entries[i].flavor_text; 
       }
     } 
     infoCard.appendChild(flavour)
-    }
-    const a = await doubleAfter2Seconds(10);
-    request.send();
-    
-    
-}
-
-generateCard(pokemons);
-
-var el = x => document.getElementById(x);
-function checkempty(){
-  if (el('result-label').innerHTML == "") {
-    console.log("empty field");
   }
-}
-
-checkempty()
-
-async function analysefinished(){
-  name = el('result-label').innerHTML;
-  pokemon = name.toLowerCase()
-  var request = new XMLHttpRequest();
-  request.open('GET', 'https://pokeapi.co/api/v2/pokemon/' + pokemon, true);
-  request.onload = function () {
-
-  // Begin accessing JSON data here
-  var data = JSON.parse(this.response);
-  detailView(data.species.name, data)
-}
-const a = await doubleAfter2Seconds(10);
+  const a = await doubleAfter2Seconds(10);
   request.send();
-  }
+}
+function infoCard(data,detailCard) {
+  //create card
+  const infoCard = document.createElement('div');
+  infoCard.setAttribute('class', 'infocard ' + pokemon)
+  detailCard.appendChild(infoCard)
+  //title
+  h2 = titleInfocard(infoCard,data);
+  //sprite
+  spriteInfoCard(infoCard,data);
+  //types
+  typeInfoCard(infoCard,data,h2);
+    //flavor text
+  flavourInfoCard(data,infoCard);
+}
+function clearBox(elementID){
+    document.getElementById(elementID).innerHTML = "";
+}
+
+
+
+function regionChange() {
+  if (document.getElementById("regions").value === "kanto"){
+    clearBox('displaygrid');
+    generateCard(kanto);
+  } else if (document.getElementById("regions").value === "johto") {
+    clearBox('displaygrid');
+    generateCard(johto);
+  } else if (document.getElementById("regions").value === "hoenn") {
+    clearBox('displaygrid');
+    generateCard(hoenn);
+  } else if (document.getElementById("regions").value === "sinnoh") {
+    clearBox('displaygrid');
+    generateCard(sinnoh);
+  } else if (document.getElementById("regions").value === "unova") {
+    clearBox('displaygrid');
+    generateCard(unova);
+  } else if (document.getElementById("regions").value === "kalos") {
+    clearBox('displaygrid');
+    generateCard(kalos);
+  } else if (document.getElementById("regions").value === "alola") {
+    clearBox('displaygrid');
+    generateCard(alola);
+  }    
+}
+
+//generateCard(johto);
+regionChange();
+
+
+

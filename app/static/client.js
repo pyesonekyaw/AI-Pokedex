@@ -44,7 +44,7 @@ function showinfo(){
 
     // Begin accessing JSON data here
     var new_data = JSON.parse(this.response);
-    detailView(pokemon, new_data)
+    detailView(new_data)
     }
     
     request.send();
