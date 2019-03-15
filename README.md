@@ -1,6 +1,6 @@
 <p align="center">
 
-  <img align="center" alt="Mockup" title="Mockup" src="https://i.ibb.co/wBNw1kk/smartmockups-jt9s187r.jpg" ></img>
+  <img align="center" alt="Mockup" title="Mockup" src="https://i.ibb.co/wBNw1kk/smartmockups-jt9s187r.jpg" width="1080" ></img>
 </a>
 </p>
 
