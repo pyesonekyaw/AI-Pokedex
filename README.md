@@ -1,7 +1,7 @@
 <p align="center">
 
-  <img alt="Mockup" title="Mockup" src="https://i.ibb.co/8M5Z1Jx/midaidex.png" width="1080"></img>
-
+  <img align="center" alt="Mockup" title="Mockup" src="https://i.ibb.co/wBNw1kk/smartmockups-jt9s187r.jpg" ></img>
+</a>
 </p>
 
 <h1 align="center"> AI Pokedex </h1> 
