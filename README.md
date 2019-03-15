@@ -3,7 +3,7 @@
 </a>
 </p>
 
-<h1 align="center"> AI Pokedex </h1> 
+
 
 An AI-powered Pokemon webapp which can identify Pokemon inside images uploaded to it. The machine learning model has an accuracy of 87% and is based off the resnet34 architecture. 
 
