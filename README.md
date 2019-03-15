@@ -1,5 +1,5 @@
 <p align="center">
-  <img align="center" alt="Mockup" title="Mockup" src="https://i.ibb.co/t2BnWV9/high.jpg" width="1080" ></img>
+  <img align="center" alt="Mockup" title="Mockup" src="https://i.ibb.co/QPDBnHF/pokedex.png" width="540" ></img>
 </a>
 </p>
 
