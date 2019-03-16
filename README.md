@@ -23,6 +23,10 @@ Try to train a multi-character identification model although this would be hard 
 
 <hr>
 
+### Contributors
+
+Open to contributors, need someone to refactor the code and reduce the amount of CSS.
+
 ### Changelog
 * 9/2/2019 - Used a larger dataset of 70000 images of all 809 pokemon, with around 90 images of each Pokemon to retrain model. Data was acquired using Bing Image Search API. Data cleaning was done to remove incorrect images amongst the downloaded data through a modified version of Fast.ai's ImageCleaner. Achieved accuracy of 87%.
 
